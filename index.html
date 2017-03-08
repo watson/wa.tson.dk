@@ -25,11 +25,34 @@
     footer {
       margin-top: 2em;
     }
+    ul.flat {
+      margin: 0;
+      padding: 0;
+      display: inline;
+      list-style: none;
+    }
+    ul.flat li {
+      margin: 0;
+      padding: 0;
+      display: inline;
+    }
+    ul.flat li:after {
+      content: " | ";
+    }
+    ul.flat li:last-child:after {
+      content: "";
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Thomas Watson</h1>
+    <ul class="flat">
+      <li><a href="https://twitter.com/wa7son">Twitter</a></li>
+      <li><a href="https://github.com/watson">GitHub</a></li>
+      <li><a href="https://medium.com/@wa7son">Medium</a></li>
+      <li><a href="https://www.instagram.com/wa7son/">Instagram</a></li>
+    </ul>
   </header>
   <section>
     <h2>Bio</h2>
@@ -61,15 +84,6 @@
     <p>
       See more talks on <a href="https://github.com/watson/talks">GitHub</a>.
     </p>
-  </section>
-  <section>
-    <h2>Links</h2>
-    <ul>
-      <li><a href="https://twitter.com/wa7son">Twitter</a></li>
-      <li><a href="https://github.com/watson">GitHub</a></li>
-      <li><a href="https://medium.com/@wa7son">Medium</a></li>
-      <li><a href="https://www.instagram.com/wa7son/">Instagram</a></li>
-    </ul>
   </section>
   <footer>
     &copy; Copyright 2017 by Thomas Watson &mdash; <a href="mailto:w@tson.dk">w@tson.dk</a>
